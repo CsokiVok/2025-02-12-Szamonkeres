@@ -5,16 +5,36 @@ import { readFileSync, writeFileSync } from 'fs';
 
 @Injectable()
 export class BooksService {
-  nextid = 2;
-  book = readFileSync('db.json', 'utf8');
+  private books = [];
+  private nextId = 1;
 
-  books = JSON.parse(this.book);
+  constructor() {
+    this.loadBooks();
+  }
+
+  private loadBooks() {
+    try {
+      const data = readFileSync('db.json', 'utf8');
+      this.books = JSON.parse(data);
+      this.nextId = this.books.length > 0 ? Math.max(...this.books.map(book => book.id)) + 1 : 1;
+    } catch (error) {
+      console.error('Error loading books:', error);
+      this.books = [];
+    }
+  }
+
+  private saveBooks() {
+    try {
+      writeFileSync('db.json', JSON.stringify(this.books, null, 2));
+    } catch (error) {
+      console.error('Error saving books:', error);
+    }
+  }
 
   create(createBookDto: CreateBookDto) {
-    const newBook = { id: this.nextid, ...createBookDto };
+    const newBook = { id: this.nextId++, ...createBookDto };
     this.books.push(newBook);
-    this.nextid++;
-    writeFileSync('db.json', JSON.stringify(this.books));
+    this.saveBooks();
     return newBook;
   }
 
@@ -36,6 +56,7 @@ export class BooksService {
     const bookIndex = this.books.findIndex(book => book.id === id);
     if (bookIndex > -1) {
       this.books[bookIndex] = { ...this.books[bookIndex], ...updateBookDto };
+      this.saveBooks();
       return this.books[bookIndex];
     }
     return null;
@@ -45,6 +66,7 @@ export class BooksService {
     const bookIndex = this.books.findIndex(book => book.id === id);
     if (bookIndex > -1) {
       const removedBook = this.books.splice(bookIndex, 1);
+      this.saveBooks();
       return removedBook[0];
     }
     return null;

@@ -1,1 +1,146 @@
-[{"id":1,"author":"Kis Elek","title":"A nagy utazás","year":2000,"genre":"kaland","pages":300,"available":true},{"id":2,"author":"Nagy Robi","title":"A kis utazás","year":1999,"genre":"kaland","pages":301,"available":false}]
+[
+    {
+        "id": 1,
+        "author": "Adam Higginbotham",
+        "title": "Éjfél Csernobilban",
+        "year": 2019,
+        "genre": "Tényirodalmi ",
+        "pages": 639,
+        "available": true
+    },
+    {
+        "id": 2,
+        "author": "Móra Ferenc",
+        "title": "Kincskereső kisködmön",
+        "year": 1918,
+        "genre": "Ifjúsági",
+        "pages": 180,
+        "available": true
+    },
+    {
+        "id": 3,
+        "author": "Jókai Mór",
+        "title": "Az arany ember",
+        "year": 1872,
+        "genre": "Romantikus",
+        "pages": 320,
+        "available": false
+    },
+    {
+        "id": 4,
+        "author": "Agatha Christie",
+        "title": "Tíz kicsi néger",
+        "year": 1939,
+        "genre": "Krimi",
+        "pages": 250,
+        "available": true
+    },
+    {
+        "id": 5,
+        "author": "Dan Brown",
+        "title": "A Da Vinci-kód",
+        "year": 2003,
+        "genre": "Thriller",
+        "pages": 460,
+        "available": false
+    },
+    {
+        "id": 6,
+        "author": "George Orwell",
+        "title": "1984",
+        "year": 1949,
+        "genre": "Disztópia",
+        "pages": 328,
+        "available": true
+    },
+    {
+        "id": 7,
+        "author": "Verne Gyula",
+        "title": "80 nap alatt a Föld körül",
+        "year": 1873,
+        "genre": "Kaland",
+        "pages": 300,
+        "available": false
+    },
+    {
+        "id": 8,
+        "author": "J. K. Rowling",
+        "title": "Harry Potter és a bölcsek köve",
+        "year": 1997,
+        "genre": "Fantasy",
+        "pages": 345,
+        "available": true
+    },
+    {
+        "id": 9,
+        "author": "Mark Twain",
+        "title": "Tom Sawyer kalandjai",
+        "year": 1876,
+        "genre": "Ifjúsági",
+        "pages": 220,
+        "available": true
+    },
+    {
+        "id": 10,
+        "author": "Stephen King",
+        "title": "Az",
+        "year": 1986,
+        "genre": "Horror",
+        "pages": 1138,
+        "available": false
+    },
+    {
+        "id": 11,
+        "author": "Ken Follett",
+        "title": "A katedrális",
+        "year": 1989,
+        "genre": "Történelmi",
+        "pages": 973,
+        "available": true
+    },
+    {
+        "id": 12,
+        "author": "H. G. Wells",
+        "title": "A láthatatlan ember",
+        "year": 1897,
+        "genre": "Sci-fi",
+        "pages": 208,
+        "available": false
+    },
+    {
+        "id": 13,
+        "author": "Lev Tolsztoj",
+        "title": "Háború és béke",
+        "year": 1869,
+        "genre": "Történelmi",
+        "pages": 1225,
+        "available": true
+    },
+    {
+        "id": 14,
+        "author": "Isaac Asimov",
+        "title": "Alapítvány",
+        "year": 1951,
+        "genre": "Sci-fi",
+        "pages": 255,
+        "available": false
+    },
+    {
+        "id": 15,
+        "author": "Douglas Adams",
+        "title": "Galaxis útikalauz stopposoknak",
+        "year": 1979,
+        "genre": "Sci-fi",
+        "pages": 216,
+        "available": true
+    },
+    {
+        "id": 16,
+        "author": "Oscar Wilde",
+        "title": "Dorian Gray arcképe",
+        "year": 1890,
+        "genre": "Gótikus",
+        "pages": 254,
+        "available": false
+    }
+]

@@ -15,7 +15,7 @@ export class BooksController {
   @Get()
   findAll(
     @Query('page') page: number = 1,
-    @Query('limit') limit: number = 10,
+    @Query('limit') limit: number = 15,
     @Query('sortBy') sortBy: string = 'title',
     @Query('order') order: 'ASC' | 'DESC' = 'ASC'
   ) {
